@@ -52,7 +52,7 @@ public class ParaUi extends Ui {
 	public void muestraLista() {
 		lblMostrarLista.setText("");
 		for (CantanteFamoso cantanteFamoso : lista.getListaCantantes()) {
-			lblMostrarLista.setText("\n"+lblMostrarLista.getText() + cantanteFamoso.toString()+"\n");
+			lblMostrarLista.setText(lblMostrarLista.getText() + cantanteFamoso.toString()+"\n");
 		}
 	}
 

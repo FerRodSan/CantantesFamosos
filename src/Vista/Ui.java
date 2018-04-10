@@ -17,6 +17,7 @@ import java.awt.Dimension;
 import java.awt.Font;
 import javax.swing.border.LineBorder;
 import javax.swing.SwingConstants;
+import javax.swing.JTextPane;
 
 public class Ui extends JFrame {
 
@@ -24,7 +25,7 @@ public class Ui extends JFrame {
 	protected JTextField txtCantante;
 	protected JTextField txtDisco;
 	protected JButton btnInsertar;
-	protected JLabel lblLista;
+	protected JTextPane lblLista;
 	protected JLabel lblMostrarLista;
 	protected JButton btnMostrar;
 	protected JButton btnEliminar;
@@ -108,9 +109,8 @@ public class Ui extends JFrame {
 		gbc_btnInsertar.gridy = 7;
 		contentPane.add(btnInsertar, gbc_btnInsertar);
 
-		lblLista = new JLabel("");
-		lblLista.setForeground(Color.RED);
-		lblLista.setBackground(Color.BLACK);
+		lblLista = new JTextPane();
+		lblLista.setSelectionColor(Color.WHITE);
 		GridBagConstraints gbc_lblLista = new GridBagConstraints();
 		gbc_lblLista.fill = GridBagConstraints.VERTICAL;
 		gbc_lblLista.gridwidth = 4;
